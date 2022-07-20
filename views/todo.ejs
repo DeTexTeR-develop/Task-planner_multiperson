@@ -29,7 +29,7 @@
         <% for(let toDo of todos) {%> 
         <div class="task">
           <%= toDo.task %>
-          <form action="/todo/<%=toDo._id%>?_method=DELETE" method="post">
+          <form action="/todo/<%=toDo._id%>?_method=DELETE" method="POST">
             <button class="btn btn-sm  ">
               <span class="material-symbols-outlined">
                 delete
