@@ -43,7 +43,4 @@ app.delete('/todo/:id', async(req, res) => {
     res.redirect('/todo')
 })
 
-
-app.listen(3030, () => {
-    console.log('Serving at 3030!');
-})
+module.exports = app;
