@@ -19,7 +19,7 @@
       
       <header>
         <h1>Todo App</h1>
-        <form action="/todo" method="post" novalidate class="needs-validation">
+        <form action="/task" method="post" novalidate class="needs-validation">
           <input type="text" id="input-form-text" name="todo[task]" placeholder="Add new Todo" required>
           <button id="input-form-btn" class="fa-solid fa-plus"></button>
         </form>
@@ -29,7 +29,7 @@
         <% for(let toDo of todos) {%> 
         <div class="task">
           <%= toDo.task %>
-          <form action="/todo/<%=toDo._id%>?_method=DELETE" method="POST">
+          <form action="/task/<%=toDo._id%>?_method=DELETE" method="POST">
             <button class="btn btn-sm  ">
               <span class="material-symbols-outlined">
                 delete
